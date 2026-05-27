@@ -1,5 +1,5 @@
 /* Dark mode colors - class-based toggle */
-html.dark-mode {
+html.dark-mode.dark-mode {
   --dm-bg: #0b1120;
   --dm-fg: #c9d1d9;
   --dm-muted: #94a3b8;
@@ -14,148 +14,148 @@ html.dark-mode {
   --toggle-fg: #333333;
   --toggle-fg-dark: #e0e0e0;
 }
-html.dark-mode { color-scheme: dark; }
+html.dark-mode.dark-mode { color-scheme: dark; }
 
-html.dark-mode body,
-html.dark-mode .wy-nav-side,
-html.dark-mode .wy-nav-content,
-html.dark-mode .rst-content,
-html.dark-mode .wy-side-scroll,
-html.dark-mode .wy-sidebar-contents,
-html.dark-mode .wy-side-nav-search,
-html.dark-mode .footer,
-html.dark-mode .wy-breadcrumbs,
-html.dark-mode .wy-table-responsive table,
-html.dark-mode .highlight,
-html.dark-mode .highlight pre,
-html.dark-mode .sd-content-wide {
-  background-color: var(--dm-bg) !important;
-  color: var(--dm-fg) !important;
+html.dark-mode.dark-mode body,
+html.dark-mode.dark-mode .wy-nav-side,
+html.dark-mode.dark-mode .wy-nav-content,
+html.dark-mode.dark-mode .rst-content,
+html.dark-mode.dark-mode .wy-side-scroll,
+html.dark-mode.dark-mode .wy-sidebar-contents,
+html.dark-mode.dark-mode .wy-side-nav-search,
+html.dark-mode.dark-mode .footer,
+html.dark-mode.dark-mode .wy-breadcrumbs,
+html.dark-mode.dark-mode .wy-table-responsive table,
+html.dark-mode.dark-mode .highlight,
+html.dark-mode.dark-mode .highlight pre,
+html.dark-mode.dark-mode .sd-content-wide {
+  background-color: var(--dm-bg);
+  color: var(--dm-fg);
 }
 
-html.dark-mode .wy-side-nav-search input,
-html.dark-mode .wy-side-nav-search input:focus,
-html.dark-mode .wy-side-nav-search input:hover,
-html.dark-mode .rst-content blockquote,
-html.dark-mode .rst-content thead,
-html.dark-mode .wy-menu-vertical a:hover,
-html.dark-mode .wy-menu-vertical a.current {
-  background-color: var(--dm-surface) !important;
-  color: var(--dm-fg) !important;
+html.dark-mode.dark-mode .wy-side-nav-search input,
+html.dark-mode.dark-mode .wy-side-nav-search input:focus,
+html.dark-mode.dark-mode .wy-side-nav-search input:hover,
+html.dark-mode.dark-mode .rst-content blockquote,
+html.dark-mode.dark-mode .rst-content thead,
+html.dark-mode.dark-mode .wy-menu-vertical a:hover,
+html.dark-mode.dark-mode .wy-menu-vertical a.current {
+  background-color: var(--dm-surface);
+  color: var(--dm-fg);
 }
 
-html.dark-mode .wy-side-nav-search input {
-  border-color: var(--dm-muted) !important;
+html.dark-mode.dark-mode .wy-side-nav-search input {
+  border-color: var(--dm-muted);
 }
 
-html.dark-mode a,
-html.dark-mode .wy-menu-vertical a,
-html.dark-mode .rst-content a {
-  color: var(--dm-accent) !important;
+html.dark-mode.dark-mode a,
+html.dark-mode.dark-mode .wy-menu-vertical a,
+html.dark-mode.dark-mode .rst-content a {
+  color: var(--dm-accent);
 }
 
-html.dark-mode .rst-content code,
-html.dark-mode .rst-content tt,
-html.dark-mode .rst-content pre,
-html.dark-mode .highlight code,
-html.dark-mode .highlight pre {
-  background-color: var(--dm-code-bg) !important;
-  color: var(--dm-fg) !important;
+html.dark-mode.dark-mode .rst-content code,
+html.dark-mode.dark-mode .rst-content tt,
+html.dark-mode.dark-mode .rst-content pre,
+html.dark-mode.dark-mode .highlight code,
+html.dark-mode.dark-mode .highlight pre {
+  background-color: var(--dm-code-bg);
+  color: var(--dm-fg);
 }
 
-html.dark-mode .rst-content table,
-html.dark-mode .wy-table-responsive table {
-  border-color: var(--dm-border-2) !important;
+html.dark-mode.dark-mode .rst-content table,
+html.dark-mode.dark-mode .wy-table-responsive table {
+  border-color: var(--dm-border-2);
 }
 
-html.dark-mode .wy-menu-vertical a,
-html.dark-mode .wy-menu-vertical a:hover,
-html.dark-mode .wy-menu-vertical a.current,
-html.dark-mode .wy-nav-side,
-html.dark-mode .wy-nav-content,
-html.dark-mode .rst-content,
-html.dark-mode .footer {
-  border-color: var(--dm-border) !important;
+html.dark-mode.dark-mode .wy-menu-vertical a,
+html.dark-mode.dark-mode .wy-menu-vertical a:hover,
+html.dark-mode.dark-mode .wy-menu-vertical a.current,
+html.dark-mode.dark-mode .wy-nav-side,
+html.dark-mode.dark-mode .wy-nav-content,
+html.dark-mode.dark-mode .rst-content,
+html.dark-mode.dark-mode .footer {
+  border-color: var(--dm-border);
 }
 
-html.dark-mode .rst-content blockquote {
-  border-left-color: var(--dm-accent) !important;
-  color: var(--dm-fg) !important;
+html.dark-mode.dark-mode .rst-content blockquote {
+  border-left-color: var(--dm-accent);
+  color: var(--dm-fg);
 }
 
-html.dark-mode .wy-breadcrumbs,
-html.dark-mode .wy-side-nav-search,
-html.dark-mode .wy-footer {
-  background-color: var(--dm-bg) !important;
+html.dark-mode.dark-mode .wy-breadcrumbs,
+html.dark-mode.dark-mode .wy-side-nav-search,
+html.dark-mode.dark-mode .wy-footer {
+  background-color: var(--dm-bg);
 }
 
-html.dark-mode .navbar,
-html.dark-mode .rst-content .section,
-html.dark-mode .wy-nav-side,
-html.dark-mode .wy-side-nav-search {
-  background-color: var(--dm-bg) !important;
+html.dark-mode.dark-mode .navbar,
+html.dark-mode.dark-mode .rst-content .section,
+html.dark-mode.dark-mode .wy-nav-side,
+html.dark-mode.dark-mode .wy-side-nav-search {
+  background-color: var(--dm-bg);
 }
 
 /* Admonitions (note, warning, tip, caution, etc.) */
-html.dark-mode .admonition {
-  color: var(--dm-fg) !important;
-  border-left: 4px solid var(--dm-accent) !important;
+html.dark-mode.dark-mode .admonition {
+  color: var(--dm-fg);
+  border-left: 4px solid var(--dm-accent);
 }
 
-html.dark-mode .admonition-title {
-  color: var(--dm-fg) !important;
-  background-color: rgba(255, 255, 255, 0.05) !important;
+html.dark-mode.dark-mode .admonition-title {
+  color: var(--dm-fg);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 /* Specific admonition styles in dark mode */
-html.dark-mode .admonition.note,
-html.dark-mode .admonition.todo,
-html.dark-mode .admonition.seealso {
-  background-color: rgba(59, 130, 246, 0.08) !important;
-  border-left-color: #3b82f6 !important;
+html.dark-mode.dark-mode .admonition.note,
+html.dark-mode.dark-mode .admonition.todo,
+html.dark-mode.dark-mode .admonition.seealso {
+  background-color: rgba(59, 130, 246, 0.08);
+  border-left-color: #3b82f6;
 }
-html.dark-mode .admonition.note .admonition-title,
-html.dark-mode .admonition.todo .admonition-title,
-html.dark-mode .admonition.seealso .admonition-title {
-  background-color: rgba(59, 130, 246, 0.15) !important;
-  color: #60a5fa !important;
-}
-
-html.dark-mode .admonition.warning,
-html.dark-mode .admonition.caution,
-html.dark-mode .admonition.attention {
-  background-color: rgba(217, 119, 6, 0.08) !important;
-  border-left-color: #d97706 !important;
-}
-html.dark-mode .admonition.warning .admonition-title,
-html.dark-mode .admonition.caution .admonition-title,
-html.dark-mode .admonition.attention .admonition-title {
-  background-color: rgba(217, 119, 6, 0.15) !important;
-  color: #fbbf24 !important;
+html.dark-mode.dark-mode .admonition.note .admonition-title,
+html.dark-mode.dark-mode .admonition.todo .admonition-title,
+html.dark-mode.dark-mode .admonition.seealso .admonition-title {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
 }
 
-html.dark-mode .admonition.danger,
-html.dark-mode .admonition.error {
-  background-color: rgba(239, 68, 68, 0.08) !important;
-  border-left-color: #ef4444 !important;
+html.dark-mode.dark-mode .admonition.warning,
+html.dark-mode.dark-mode .admonition.caution,
+html.dark-mode.dark-mode .admonition.attention {
+  background-color: rgba(217, 119, 6, 0.08);
+  border-left-color: #d97706;
 }
-html.dark-mode .admonition.danger .admonition-title,
-html.dark-mode .admonition.error .admonition-title {
-  background-color: rgba(239, 68, 68, 0.15) !important;
-  color: #fca5a5 !important;
+html.dark-mode.dark-mode .admonition.warning .admonition-title,
+html.dark-mode.dark-mode .admonition.caution .admonition-title,
+html.dark-mode.dark-mode .admonition.attention .admonition-title {
+  background-color: rgba(217, 119, 6, 0.15);
+  color: #fbbf24;
 }
 
-html.dark-mode .admonition.tip,
-html.dark-mode .admonition.hint,
-html.dark-mode .admonition.important {
-  background-color: rgba(16, 185, 129, 0.08) !important;
-  border-left-color: #10b981 !important;
+html.dark-mode.dark-mode .admonition.danger,
+html.dark-mode.dark-mode .admonition.error {
+  background-color: rgba(239, 68, 68, 0.08);
+  border-left-color: #ef4444;
 }
-html.dark-mode .admonition.tip .admonition-title,
-html.dark-mode .admonition.hint .admonition-title,
-html.dark-mode .admonition.important .admonition-title {
-  background-color: rgba(16, 185, 129, 0.15) !important;
-  color: #34d399 !important;
+html.dark-mode.dark-mode .admonition.danger .admonition-title,
+html.dark-mode.dark-mode .admonition.error .admonition-title {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+}
+
+html.dark-mode.dark-mode .admonition.tip,
+html.dark-mode.dark-mode .admonition.hint,
+html.dark-mode.dark-mode .admonition.important {
+  background-color: rgba(16, 185, 129, 0.08);
+  border-left-color: #10b981;
+}
+html.dark-mode.dark-mode .admonition.tip .admonition-title,
+html.dark-mode.dark-mode .admonition.hint .admonition-title,
+html.dark-mode.dark-mode .admonition.important .admonition-title {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: #34d399;
 }
 
 /* Dark mode toggle button */
@@ -180,22 +180,22 @@ html.dark-mode .admonition.important .admonition-title {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-html.dark-mode .dark-mode-toggle {
+html.dark-mode.dark-mode .dark-mode-toggle {
   background-color: var(--toggle-bg-dark);
   color: var(--toggle-fg-dark);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* Improve visibility of images with transparent backgrounds in dark mode */
-html.dark-mode .wy-side-nav-logo img,
-html.dark-mode .logo img,
-html.dark-mode .wy-logo img {
+html.dark-mode.dark-mode .wy-side-nav-logo img,
+html.dark-mode.dark-mode .logo img,
+html.dark-mode.dark-mode .wy-logo img {
   /* subtle light surface behind transparent images */
-  background-color: var(--dm-surface) !important;
-  padding: 4px !important;
-  border-radius: 6px !important;
-  border: 1px solid var(--dm-surface-border) !important;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.4) !important;
+  background-color: var(--dm-surface);
+  padding: 4px;
+  border-radius: 6px;
+  border: 1px solid var(--dm-surface-border);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
 
 /* Allow site maintainers to provide a dark-variant image using data-dark attribute
