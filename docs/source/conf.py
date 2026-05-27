@@ -62,6 +62,7 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 html_css_files = [
     'css/dark_mode.css',
+    'css/pygments_dark.css',
 ]
 html_js_files = [
     'js/dark_mode_toggle.js',

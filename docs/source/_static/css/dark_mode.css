@@ -1,4 +1,21 @@
 /* Dark mode colors - class-based toggle */
+html.dark-mode {
+  --dm-bg: #0b1120;
+  --dm-fg: #c9d1d9;
+  --dm-muted: #94a3b8;
+  --dm-accent: #58a6ff;
+  --dm-code-bg: #010409;
+  --dm-border: #21262d;
+  --dm-border-2: #30363d;
+  --dm-surface: rgba(255,255,255,0.03);
+  --dm-surface-border: rgba(255,255,255,0.04);
+  --toggle-bg: #f0f0f0;
+  --toggle-bg-dark: #1e1e1e;
+  --toggle-fg: #333333;
+  --toggle-fg-dark: #e0e0e0;
+}
+html.dark-mode { color-scheme: dark; }
+
 html.dark-mode body,
 html.dark-mode .wy-nav-side,
 html.dark-mode .wy-nav-content,
@@ -12,8 +29,8 @@ html.dark-mode .wy-table-responsive table,
 html.dark-mode .highlight,
 html.dark-mode .highlight pre,
 html.dark-mode .sd-content-wide {
-  background-color: #0b1120 !important;
-  color: #c9d1d9 !important;
+  background-color: var(--dm-bg) !important;
+  color: var(--dm-fg) !important;
 }
 
 html.dark-mode .wy-side-nav-search input,
@@ -23,18 +40,18 @@ html.dark-mode .rst-content blockquote,
 html.dark-mode .rst-content thead,
 html.dark-mode .wy-menu-vertical a:hover,
 html.dark-mode .wy-menu-vertical a.current {
-  background-color: #111827 !important;
-  color: #c9d1d9 !important;
+  background-color: var(--dm-surface) !important;
+  color: var(--dm-fg) !important;
 }
 
 html.dark-mode .wy-side-nav-search input {
-  border-color: #394254 !important;
+  border-color: var(--dm-muted) !important;
 }
 
 html.dark-mode a,
 html.dark-mode .wy-menu-vertical a,
 html.dark-mode .rst-content a {
-  color: #58a6ff !important;
+  color: var(--dm-accent) !important;
 }
 
 html.dark-mode .rst-content code,
@@ -42,13 +59,13 @@ html.dark-mode .rst-content tt,
 html.dark-mode .rst-content pre,
 html.dark-mode .highlight code,
 html.dark-mode .highlight pre {
-  background-color: #010409 !important;
-  color: #c9d1d9 !important;
+  background-color: var(--dm-code-bg) !important;
+  color: var(--dm-fg) !important;
 }
 
 html.dark-mode .rst-content table,
 html.dark-mode .wy-table-responsive table {
-  border-color: #30363d !important;
+  border-color: var(--dm-border-2) !important;
 }
 
 html.dark-mode .wy-menu-vertical a,
@@ -58,25 +75,87 @@ html.dark-mode .wy-nav-side,
 html.dark-mode .wy-nav-content,
 html.dark-mode .rst-content,
 html.dark-mode .footer {
-  border-color: #21262d !important;
+  border-color: var(--dm-border) !important;
 }
 
 html.dark-mode .rst-content blockquote {
-  border-left-color: #58a6ff !important;
-  color: #c9d1d9 !important;
+  border-left-color: var(--dm-accent) !important;
+  color: var(--dm-fg) !important;
 }
 
 html.dark-mode .wy-breadcrumbs,
 html.dark-mode .wy-side-nav-search,
 html.dark-mode .wy-footer {
-  background-color: #0b1120 !important;
+  background-color: var(--dm-bg) !important;
 }
 
 html.dark-mode .navbar,
 html.dark-mode .rst-content .section,
 html.dark-mode .wy-nav-side,
 html.dark-mode .wy-side-nav-search {
-  background-color: #0b1120 !important;
+  background-color: var(--dm-bg) !important;
+}
+
+/* Admonitions (note, warning, tip, caution, etc.) */
+html.dark-mode .admonition {
+  color: var(--dm-fg) !important;
+  border-left: 4px solid var(--dm-accent) !important;
+}
+
+html.dark-mode .admonition-title {
+  color: var(--dm-fg) !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Specific admonition styles in dark mode */
+html.dark-mode .admonition.note,
+html.dark-mode .admonition.todo,
+html.dark-mode .admonition.seealso {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+  border-left-color: #3b82f6 !important;
+}
+html.dark-mode .admonition.note .admonition-title,
+html.dark-mode .admonition.todo .admonition-title,
+html.dark-mode .admonition.seealso .admonition-title {
+  background-color: rgba(59, 130, 246, 0.15) !important;
+  color: #60a5fa !important;
+}
+
+html.dark-mode .admonition.warning,
+html.dark-mode .admonition.caution,
+html.dark-mode .admonition.attention {
+  background-color: rgba(217, 119, 6, 0.08) !important;
+  border-left-color: #d97706 !important;
+}
+html.dark-mode .admonition.warning .admonition-title,
+html.dark-mode .admonition.caution .admonition-title,
+html.dark-mode .admonition.attention .admonition-title {
+  background-color: rgba(217, 119, 6, 0.15) !important;
+  color: #fbbf24 !important;
+}
+
+html.dark-mode .admonition.danger,
+html.dark-mode .admonition.error {
+  background-color: rgba(239, 68, 68, 0.08) !important;
+  border-left-color: #ef4444 !important;
+}
+html.dark-mode .admonition.danger .admonition-title,
+html.dark-mode .admonition.error .admonition-title {
+  background-color: rgba(239, 68, 68, 0.15) !important;
+  color: #fca5a5 !important;
+}
+
+html.dark-mode .admonition.tip,
+html.dark-mode .admonition.hint,
+html.dark-mode .admonition.important {
+  background-color: rgba(16, 185, 129, 0.08) !important;
+  border-left-color: #10b981 !important;
+}
+html.dark-mode .admonition.tip .admonition-title,
+html.dark-mode .admonition.hint .admonition-title,
+html.dark-mode .admonition.important .admonition-title {
+  background-color: rgba(16, 185, 129, 0.15) !important;
+  color: #34d399 !important;
 }
 
 /* Dark mode toggle button */
@@ -88,8 +167,8 @@ html.dark-mode .wy-side-nav-search {
   padding: 10px 12px;
   border: none;
   border-radius: 50%;
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: var(--toggle-bg);
+  color: var(--toggle-fg);
   font-size: 20px;
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
@@ -102,21 +181,20 @@ html.dark-mode .wy-side-nav-search {
 }
 
 html.dark-mode .dark-mode-toggle {
-  background-color: #1e1e1e;
-  color: #e0e0e0;
+  background-color: var(--toggle-bg-dark);
+  color: var(--toggle-fg-dark);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* Improve visibility of images with transparent backgrounds in dark mode */
 html.dark-mode .wy-side-nav-logo img,
 html.dark-mode .logo img,
-html.dark-mode .rst-content img,
 html.dark-mode .wy-logo img {
   /* subtle light surface behind transparent images */
-  background-color: rgba(255,255,255,0.03) !important;
+  background-color: var(--dm-surface) !important;
   padding: 4px !important;
   border-radius: 6px !important;
-  border: 1px solid rgba(255,255,255,0.04) !important;
+  border: 1px solid var(--dm-surface-border) !important;
   box-shadow: 0 1px 3px rgba(0,0,0,0.4) !important;
 }
 
